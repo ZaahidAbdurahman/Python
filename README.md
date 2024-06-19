@@ -1,4 +1,4 @@
-![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/9f7578ff-12a3-4b49-bfca-28c9e668438f)![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/0c0456b9-5d5c-40ba-b11d-2be0e28cd3c6)# Python
+# Python
 
 # 1. Introduction to Python
 
