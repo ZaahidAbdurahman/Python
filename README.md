@@ -8,9 +8,6 @@
   
   -  Each file has a file name that is represented in the computer's file directory, like a file icon that you click on.
 
-     [Uploading image.png…]()
-     Figure 2: Simple program
-
   - Let's consider this scenario: A is a list of numbers, specifically 1, 2, 3, 4, and 5 in Python notation, denoted by square brackets.
   
   - When we assign B to A, B points to the same memory location as A.
