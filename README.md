@@ -1,6 +1,7 @@
 # Python
 
-# 1. Introduction to Python
+
+# 1. Python 101 Introduction to Python
 
   # How Computers Work
 
@@ -348,7 +349,101 @@
 
 - With the for loop, you can declare a new variable, like "item," to hold the value of each element in your list as you iterate through it.
 
-- It's short and sweet, and it's actually the most common loop you'll use when coding in Python. 
+- It's short and sweet, and it's actually the most common loop you'll use when coding in Python.
+
+# Python 102: Python Fundamentals
+
+# Anatomy of a Function
+
+# Functions
+
+- Functions are composed of a name and parameters, which are denoted by the def statement. So, to create a function, let's call it performOperation and include num1, num2, and operation as parameters. 
+
+  ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/78b6d7ee-c5ed-465c-bcc2-7820a14174c3)
+  Figure 1: Functions
+
+# Named Parameters
+
+- If we remove this part, we'll end up with a total of five. However, we can also assign our own value.
+
+- If our function has a lot of these optional keyword parameters, it can become confusing to determine their order.
+
+- Therefore, it may be more clear and easier to read to explicitly state "operation equals multiply".
+
+# *args
+
+- There is a rule when using keyword arguments in Python i.e. they must come after the positional arguments.
+
+- The order of the first two arguments is important and cannot be changed.
+
+- However, after these mandatory arguments, the keyword arguments can be in any order.
+
+# Variables and Scope
+
+# Function Scope
+
+- In our earlier section, *args and **kwargs were used to print out the arguments passed into a function.
+
+- This allowed us to see a tuple and dictionary of the passed arguments.
+
+- However, there's another method that allows us to access all the variables within a Python function without any asterisks.
+
+# locals()
+
+- Let's modify the original function definition to execute operation num1, num2, and operation, which defaults to addition.
+
+- Afterwards, use the locals function in Python to print the output.
+
+![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/7c3e8dce-6171-44db-b82f-f32c8d0bf6a2)
+Figure 6: locals()
+
+# globals()
+
+- Running the code would result in so many items, some of which are Python's pre-built variables that will come in handy when working with classes and packages.
+
+- However, Jupyter Notebooks also employ various variables to manage its data.
+
+# Global and Local Scope
+
+- The plan is to create two functions: function one with variables A and B, and function two with variables C and B.
+
+- Both functions will print out their local variables.
+
+- We will call function one with arguments 1 and 2, and function two with arguments 3 and 4.
+
+# Functions As Variables
+
+# Variables as Functions
+
+- Variables and functions both have names and data associated with them.
+
+- However, for functions, this data includes information about required parameters and the lines of instruction to be executed.
+
+-   In Python, a function is represented as an object.
+
+# Viewing Function Data With  __code__
+
+- The "code" attribute of Python function objects can be used to confirm that functions are just variables in Python.
+
+# Text Processing in Python
+
+- Here are familiar text and function names to illustrate a point.
+
+- There are two text processing operations, and a function that can make the text lowercase, remove punctuation, new lines, and words that are three characters or less.
+
+# Lambda Functions
+
+- These are a way to represent a function without giving it a variable name.
+
+- Just like how an expression like 5 or 2 + 3 can be written without assigning it to a variable, a small function can be defined using the lambda keyword.
+
+  ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/6044fd33-ed12-4937-bb3c-fec97c0adbb0)
+  Figure 12: Lambda functions
+
+
+
+
+
 
 
 
