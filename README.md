@@ -356,7 +356,7 @@
 
 - It's short and sweet, and it's actually the most common loop you'll use when coding in Python.
 
-# Python 102: Python Fundamentals
+# Python 102: Python Fundamentals 1. Basic Functions
 
 # Anatomy of a Function
 
@@ -447,6 +447,162 @@ Figure 6: locals()
   ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/6044fd33-ed12-4937-bb3c-fec97c0adbb0)
 
   Figure 12: Lambda functions
+
+# 2. Classes and Objects Fundamentals
+
+# Instance Attributes
+
+- The topic of classes can be overwhelming and hard to understand.
+
+- We may not be sure what they are or how to determine which class a member belongs to.
+
+  ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/503bfbe8-e99f-431d-8c80-1ed6a894c7c7)
+
+  Figure 15: Instance attributes
+
+# Static Attributes
+
+- For now, change the way legs attribute are handled in the class.
+
+- Instead of keeping it in the constructor, define it as a static variable outside of the constructor. 
+
+- It is important to note that static variables can still be changed, so to prevent this, programmers conventionally add an underscore before the variable name.
+
+# Instance and Static Methods
+
+One of your favorite things to do in Python may be string parsing. To demonstrate, create a class called Word Set that contains a set of words. 
+
+- Start with an empty set and add to it by passing in big blocks of text, punctuation and all. 
+
+- Add text using the method add text, which first calls the method clean text to remove the punctuation and make everything lowercase. 
+
+- Then use the split function to turn the sentence into a list of words, which can be added to the set. 
+
+- Finally, print the set of words. 
+
+  ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/8a9abc10-b8e2-4d72-903a-5c72c780d67e)
+
+  Figure 17: Static instances and methods
+
+- The clean text method is a static method because it does not belong to any particular class instance, whereas add text is an instance method that belongs to a particular instance of the class.
+
+# Inheritance
+
+# Class Inheritance
+
+- In the world of computer science and Python programming, it is possible for one class to inherit all the methods and attributes of another class.
+
+- The original class is referred to as the parent class, while the new class that extends it is known as the child class.
+
+# Extending Built-in Classes
+
+- We can also apply class extensions in Python's built-in classes.
+
+- In Python, creating a new list can be done by instantiating it as "list". Although it appears as a function, "list" is actually a class.
+  
+ ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/d63a5c1a-4244-4ece-9db8-7a6cf3d29715)
+
+  Figure 20: Extending built-in classes
+
+- Suppose you want a list that ensures all appended items are unique, like a set.
+
+- Create your own unique list class by extending the list class.
+
+- The unique list class inherits from the list class and we will override the append function.
+
+# 3. Error Handling Fundamentals
+
+![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/0081e220-9fb9-4a08-a6e6-4ec793956d6a)
+
+Figure 23: Errors and exceptions
+
+- When working with Python, notice that sometimes these problems are referred to as errors, while other times are called exceptions.
+
+- If official Python documentation is consulted, you will find that exceptions are determined during runtime and can be retried, whereas errors cannot be retried.
+
+# Try/Except 
+
+- Let's give it a try. Add 1/0 in here and then except. Going to except exception as e, so e is going to be our variable.
+
+- Actually, that instance of the exception that was raised, print type e, and there you go.
+
+  ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/cc996beb-45d3-467d-b420-9bd912812e91)
+
+  Figure 24: Try/Except 
+
+# Managing and Handling Exceptions
+
+- Exceptions are not to be feared but they do need to be reigned in. We saw a little bit about how to do this previously with the Try / Except statement.
+
+- Here we are catching this exception and then just returning it. 
+
+  ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/20c2e63c-fd0f-4fa6-88c3-d38b3667ca7c)
+
+  Figure 25: Try/Except
+
+  - We do not get a stack trace or anything, but do see that this zero division error instance is returned.
+ 
+  # Finally
+
+- Another useful tool is the finally statement. If you take the Try / Except block and add a finally to it, this will always execute and gets printed out.
+
+- Finally statements can be useful because they will always execute no matter what happens inside this try block.
+
+- You do not even need any except statements! This error is thrown, but still printed out.
+
+# Catching Exceptions by Type
+
+- Notice that you are always catching this exception class.
+
+- You could add another except statement above this and chain these together just fine. 
+
+- We are going to catch the zero division specifically.
+
+- There was a zero division error, and now that prints out.
+
+![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/d01299ee-b00c-4a80-936d-531ff75a6524)
+
+Figure 27: Catching exceptions by type
+
+# Custom Decorators
+
+- Custom decorators can also be used to do this.
+
+- We saw decorators previously with the static method decorator but now we are going to write our own.
+
+- Grab all these exception handlings that were done and make a new function called handleException.
+
+- We are going to pass as an argument, a function, and then define an inner function called wrapper.
+
+# Raising Exceptions
+
+- Let's talk about raising exceptions. Use the handle exception decorator. Make a  function called raiseError raise Exception.
+
+- This raise statement raises or throws this new exception that was created when it is reached.
+
+# Working With Custom Exceptions
+
+- Custom exceptions is an easy one. In fact, you already know how to do this, class CustomException extends Exception:pass. Now you have written a custom exception.
+
+- There are, however, a few more things to cover.
+
+- The pass statement is used because we literally do not need to define anything for our new CustomException class.
+
+- It inherits the constructor of the Exception class that it is extending. 
+
+# Adding Attributes
+
+- Let's write an HTTP exception with a static status code and a message attribute, and then some information about how to format the string that it passes to the parent exception.
+
+- Here is the HttpException. It is going to extend the Exception and we are going to give it a status code.
+
+- Make that None for now — a special None value, and a message that is also None. 
+
+
+
+
+
+
 
 
 
