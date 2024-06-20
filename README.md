@@ -1,6 +1,5 @@
 # Python
 
-
 # 1. Python 101 Introduction to Python
 
   # How Computers Work
