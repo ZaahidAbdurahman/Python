@@ -425,7 +425,7 @@ Figure 6: locals()
 
 - However, for functions, this data includes information about required parameters and the lines of instruction to be executed.
 
--   In Python, a function is represented as an object.
+- In Python, a function is represented as an object.
 
 # Viewing Function Data With  __code__
 
