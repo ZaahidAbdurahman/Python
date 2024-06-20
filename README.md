@@ -34,7 +34,8 @@
      To access the Python command prompt, open a terminal and type "Python". Once opened, there are three greater-than symbols indicating that the prompt is ready to accept a line of Python code.
 
       ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/f02d7542-f41f-4857-8aa0-6e36067c51d9)
-     Figure 12: Running the “import this” statement
+
+      Figure 12: Running the “import this” statement
 
   # Writing Python Programs
 
@@ -282,7 +283,8 @@
 - To demonstrate this, let's take a list of numbers like one, two, three, four, and five.
 
   ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/1546d085-280b-4887-b83a-daf83d8acda2)
-  Figure 53: List comprehensions
+
+   Figure 53: List comprehensions
 
 - Using a list comprehension, we can multiply each item in the list by two, like this: two times item for item in my list.
 
@@ -307,7 +309,8 @@
 - Notice that we use a colon to separate the key and value, and surround the comprehension with curly braces.
 
   ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/f0282902-05fb-4295-bc16-d038ee33390a)
-  Figure 54: Dictionaries and comprehensions
+
+   Figure 54: Dictionaries and comprehensions
 
 - There is actually a more concise way to write this dictionary comprehension using tuple unpacking.
 
@@ -339,12 +342,14 @@
   iteration.
 
   ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/74c4b307-5a0a-4604-9a35-174585c8dd02)
-  Figure 63: While
+
+   Figure 63: While
 
   # For
 -  You will enjoy using the for loop syntax in Python. It's super intuitive, and it reads like plain English.
 
   ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/23c44f24-b0d9-4506-90b3-6dedcc7ca674)
+ 
   Figure 64: For
 
 - With the for loop, you can declare a new variable, like "item," to hold the value of each element in your list as you iterate through it.
@@ -360,6 +365,7 @@
 - Functions are composed of a name and parameters, which are denoted by the def statement. So, to create a function, let's call it performOperation and include num1, num2, and operation as parameters. 
 
   ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/78b6d7ee-c5ed-465c-bcc2-7820a14174c3)
+
   Figure 1: Functions
 
 # Named Parameters
@@ -395,6 +401,7 @@
 - Afterwards, use the locals function in Python to print the output.
 
 ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/7c3e8dce-6171-44db-b82f-f32c8d0bf6a2)
+
 Figure 6: locals()
 
 # globals()
@@ -438,6 +445,7 @@ Figure 6: locals()
 - Just like how an expression like 5 or 2 + 3 can be written without assigning it to a variable, a small function can be defined using the lambda keyword.
 
   ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/6044fd33-ed12-4937-bb3c-fec97c0adbb0)
+
   Figure 12: Lambda functions
 
 
