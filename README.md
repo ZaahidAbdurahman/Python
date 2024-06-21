@@ -597,6 +597,132 @@ Figure 27: Catching exceptions by type
 
 - Make that None for now — a special None value, and a message that is also None. 
 
+# Fundamentals of Threads and Processes
+
+- Earlier in the course it was stated that computers operate on memory.
+
+- Well, it is a little more complicated than that.
+
+- An introductory explanation of computational operations might have glossed over some details of how computers really work. 
+
+- Computers have both memory and file storage.
+
+- It is like short-term and long-term memory.
+
+- When we save a file and load to file from the disc, that is in storage i.e. long-term memory.
+
+  ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/c1c8875a-ccbf-4a8b-be35-48ed4a4665f7)
+
+  Figure 34: Multiprocessing
+
+#  Multithreading
+
+- A process can have multiple threads and execute code at the same time in parallel.
+
+- Everything we have been doing in Python so far has been inside a single thread, inside a single process i.e.
+
+- We compute each statement sequentially, but in this chapter, we are going to start computing things in parallel, inside different threads and processes.
+
+- Processes and threads may seem like abstract concepts right now, but let's get hands-on and start spinning some up. 
+
+  ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/406e2bac-6448-492c-85e2-9895199f3d79)
+  
+  Figure 35: Multithreading
+
+  ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/9cc7fef6-fa40-4fa0-a9d6-8d91510567dd)
+
+  Figure 36: Multithreading
+
+#  Multiprocessing
+
+- You are probably great at multi-processing and Python already and don't even know it.
+
+- There is a file called 1000seconds.py. All it does is call time.sleep for a thousand seconds.
+
+- Open a second tab and run it in the second tab. Now we have two tabs running this program.
+
+- From multiprocessing import Process. Before you run this, there is a small hitch with using the official Python multiprocessing module. 
+
+- On some operating systems, you cannot use this to spin up a new process that runs the function if that function is defined in the same file as opposed to imported at the top, like this, import myFunction.
+
+ 5. Fundamentals of Working with Files
+
+  Opening, Reading and Writing
+
+#  Reading Files
+
+- Watching output being printed to the screen is all well and great, but often as programmers, we are asked to produce something real, something tangible, usually for those management types that want to see a physical 
+  file they can attach to email or open in Excel or whatever it is they do with files.
+
+  ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/6464cb67-2132-43da-907c-a1cca9593568)
+
+  Figure 38: Reading files
+
+- The first thing you need to know about working with files in Python is that it is not quite as simple as when you double-click an icon on your desktop.
+
+#  Writing Files
+
+- We're going to open this file in the read mode and if we print f at this point, we get a file object.
+
+- And there are a couple of ways to get the actual text inside the file. And the first is readline, so f.readline. This reads the lines of the file one at a time.
+
+- When you run it again, you get a different line each time. So this file object contains some sort of bookmark of which lines of the file are already read.
+
+# Appending Files
+
+- Let's look at writing files. We are going to do something similar to this but instead of an R, use a W for write.
+
+- We are also going to call this output.txt, which does not exist yet, but when we run this, it will create the file for us which is a pretty nice feature.
+
+# CSV
+
+Reading 
+
+- It's time to look at the CSV module and Python. No need to install anything. It comes with Python. Just import CSV at the top. And there you go.
+
+- There is a CSV file that we are going to be working with and this is 10_02_us.csv.
+
+- This is derived from a dataset from geonames.org which provides millions of place names in geographical data sets spanning the globe.
+
+
+# Filtering Data
+
+- Let's convert from a reader object to a list object. Let's just call it data. Now we have data that we can work with.
+
+- Now you are in the market for prime real estate and interested in finding postal codes that are only divisible by one in themselves.
+
+# JSON
+
+Loading JSON
+
+- Previously, we focused on reading and writing files to and from the disk. JSON files with the .json extension are common, and you might regularly be working with them.
+
+- But for now, we will mostly be focusing on JSON strings.
+
+Dumping JSON
+
+- For this, use the json.dumps method. Here is pythonDict, you are going to use json.dumps pythonDict.
+
+  ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/d4a339a1-e0ab-420d-b4f1-fce4b46f67d9)
+
+  Figure 45: Dumping JSON
+
+# Custom JSON Decoders
+
+- To demonstrate that, let's create an animal class real quick, class Animal init self, name, self.name equals name, and modify the dictionary to use this Animal class.
+
+ ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/4c1d8065-178c-4758-8aa0-14ac3ced682a)
+
+ Figure 46: Custom JSON decoders
+
+- Obviously, an apple is not an animal, so replace this with an aardvark and just put that in there.
+
+- Animal bear and Animal cat. Now let's dump this dictionary. We get a TypeError, Object of type Animal is not JSON serializable. 
+
+
+
+
+
 
 
 
