@@ -719,6 +719,158 @@ Dumping JSON
 
 - Animal bear and Animal cat. Now let's dump this dictionary. We get a TypeError, Object of type Animal is not JSON serializable. 
 
+Python 103: Intermediate Python 
+
+1. Project Planning
+
+# Finding Inspiration
+
+- Your workplace can also serve as a wellspring of ideas. Are there aspects of your job that could benefit from automation?
+
+- Do you and your colleagues spend countless hours manually transferring data to and from spreadsheets or generating reports? Become the office hero by writing a Python script to automate those mundane processes.
+
+# User Stories
+
+- Starting with user stories, which depict small scenarios from a user's perspective, these stories should emphasize the user's goal and motivation rather than the application itself.
+
+- User stories are brief, simple, and informal, perfect for jotting down on index cards. 
+
+  ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/7fc2af15-72c8-4379-b4c6-52881a059a39)
+
+  Figure 3: Illustration of the 3 core elements of a user story
+
+# Use Cases
+
+- Use cases typically include a title, an actor (a user or system), and a scenario that describes how a goal is achieved.
+
+- The scenario can be written as a paragraph or a list of steps in simple language.
+
+  ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/8addc768-a4c2-421d-80eb-fdd781f14a30)
+
+  Figure 4: 3 core elements of a use case
+
+- While user stories and use cases may seem similar, they capture different information.
+
+- User stories focus on the who, what, and why of a task or goal, while use cases cover the who, what, and how of achieving that goal.
+
+  ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/420da07a-5ef3-4be8-9e97-5c0cf5ad8db7)
+
+  Figure 5: User Story vs Use Case
+
+  Project Requirements
+
+- Besides user stories and use cases, it's helpful to write traditional requirements to formally capture the capabilities and limitations of an application.
+
+- Functional requirements describe what the application should or should not do and are written as sentences starting with "the application must" or "the application shall."
+
+  ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/5138d406-f375-4094-9426-ff30fc01e315)
+
+  Figure 6: Project requirements
+
+- These requirements are kept at a high level, omitting specific details such as the forecast duration or temperature unit.
+
+- For personal projects, this level of detail suffices, and elaboration can be left for implementation.
+
+# Architecture
+
+ - Now that the requirements are captured, it's time to organize and structure the code for the application.
+
+ - With Python being an object-oriented programming language, considering objects and classes is essential.
+
+   ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/45b324e9-0da0-491a-9ede-c8ea3898b7d9)
+
+   Figure 7: Determining potential classes
+
+   ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/2959ea6a-0b9e-46c0-99f0-f534a569e76c)
+
+   Figure 8: Draft classes and methods
+
+# Stub Code
+
+- It's time to start coding, and to provide a structure for the design, stub code has been created for the entire program using three Python modules: dd_content.py, dd_email.py, and dd_gui.py.
+
+- The dd_email.py module contains the skeleton for the daily digest email class, with placeholder methods using the pass statement.
+
+- This allows the script to be executed without errors, even though it doesn't have any useful functionality yet.
+
+  ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/25ac2351-ae12-4079-8c0a-a44ed8502f4f)
+
+  Figure 9: Email stub code
+
+# Daily Inspirational Quotes
+
+- Now that a plan is in place and the program structure is outlined, it is time to implement the code.
+
+- In the upcoming section, four functions will be implemented in the "dd_content.py" module.
+
+- This is a good opportunity to pause and practice coding by creating a "get_random_quote" function.
+
+  ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/e6f86b9f-f3c7-40ce-aea8-a826892e8edf)
+
+  Figure 12: "dd_content.py" module
+
+  ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/16edff7e-e37f-4126-83f7-14a6a0d96c01)
+
+  Figure 13: quotes.csv file
+
+#  Weather Forecasting with OpenWeatherMap
+
+-  Since the weather forecast data needs to be current, we can't store it in a local CSV file like we did for the quotes.
+
+-  Instead, we will need to fetch the weather information from the internet.
+
+-  There are a few different ways we can do this.
+
+- Python libraries available on pypy.org that can retrieve OpenWeatherMap data.
+
+- However, for the purpose of this course, we will take a more manual approach and directly call the website's API.
+
+  ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/1566bcd5-6744-47c0-8d6e-d4eb6cd361ed)
+
+  Figure 15: Openweathermap.org
+
+- OpenWeatherMap offers various callable APIs for accessing current and forecast weather information.
+
+- To use the service, you must register with OpenWeatherMap and obtain an API key.
+
+- When accessing the forecast API, the default format for the returned data is JSON.
+
+# Trending Social Media Content (Twitter)
+
+- During the development of the DD content module, a way was needed to fetch current Twitter trends.
+
+- Luckily, Twitter offers an API for developers to access this information.
+
+- To use the API, I had to register a Twitter account, request API access, and obtain an API key.
+
+- The necessary information is located on Twitter's website under the "Getting access to the Twitter API" section.
+
+ ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/ae94c12c-5433-4a42-be9c-7e0d4443aa1c)
+
+ Figure 18: Twitter Developer Portal
+
+ # Importing Articles
+
+ ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/030ebc43-a052-499e-92a6-b99172b0a0cf)
+
+ Figure 22: Wikipedia article code content
+
+ - To implement the fourth content retrieval function, it was necessary to fetch a random Wikipedia article.
+ 
+ - The availability of a Wikipedia API was checked to fulfill this requirement.
+
+  ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/ffa6121c-1172-429b-9d87-e5306007298a)
+
+  Figure 23: Wikipedia REST API
+
+ - After expanding the page content section and scrolling towards the bottom, there is a description that seems to provide content for a random page. 
+
+
+
+
+
+
+
 
 
 
