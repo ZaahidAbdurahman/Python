@@ -863,12 +863,125 @@ Python 103: Intermediate Python
 
   Figure 23: Wikipedia REST API
 
- - After expanding the page content section and scrolling towards the bottom, there is a description that seems to provide content for a random page. 
+ - After expanding the page content section and scrolling towards the bottom, there is a description that seems to provide content for a random page.
+
+3. Digest Email
+
+- Writing and Formatting Email Messages
+
+- Now that the application can retrieve different types of content, let's shift our focus to the email section, which will be implemented in the DD email Python module.
+
+- You can find the stubbed methods for the Daily Digest email class here. 
+
+  ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/56f06fbe-7d6f-46ac-9dc7-71297fd256cb)
+
+  Figure 27: MIMEMultipart
+
+- Sometimes, it's better to have both Plaintext and HTML versions in the Daily Digest email.
+
+- So, to achieve that, the format message method generates both types of content.
+
+- The latest content is retrieved using functions from the DD content module.
+
+# Sending an Email
+
+- So, the next step after getting the daily digest content formatted is to send it as an email.
+
+- Luckily, Python has a convenient library called 'email' in its standard package, which helps manage email messages.
+
+- This package has various modules, but for this project, focus on the 'email.message' module to handle the email message itself.
+
+# Task Scheduling
+
+ ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/5719c492-0798-43c6-afa5-8b492ddb9e07)
+
+ Figure 34: Function design view
+
+- If you have ever experienced being trapped in a frozen user interface, you understand the frustration it brings.
+
+- We certainly don't want that to happen in the program.
+
+  ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/b39e66a7-bbed-4ad1-8846-b688ad6f0eba)
+
+  Figure 37: UML illustration of GUI function
+
+ ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/f9b149ca-429b-4c20-82aa-aa380221ca7c)
+
+ Figure 38: Program design iteration process
+
+ # GUI Design Planning
+
+ - Having completed the implementation of the four content generation functions, an email class for formatting and sending the daily digest, and a scheduler, most of my functional requirements are now checked off.
+ 
+ - These three modules are the core components of my application.
+ 
+ - However, I also included a non-functional requirement, which is to create a graphical user interface (GUI) for the admin's use.
+
+ ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/34e400c5-91c9-42e9-a929-a12326b42170)
+
+ Figure 41:  GUI module design
+
+ ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/553b6b67-2a62-44b6-9d50-b6e45aaa22d6)
+
+ Figure 45:  Recipient UI design
+
+# Exploring Python Tkinter GUI
+
+- Now that the plan for the GUI has been introduced, let's delve into the code that was written to implement it.
+
+- The GUI module, called "dd GUI," consists of 250 lines.
+
+- Focus on key design decisions, and find the complete code in the exercise files for more detailed exploration. 
+
+- In addition to importing Python's TKinter module, the daily digest email and scheduler modules are also imported since the GUI interacts with instances of both.
+
+  ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/21670e94-cc94-44f0-96f3-9e5865aa6c64)
+
+  Figure 47: Tkinter GUI Code implementation
+
+# Iterative Enhancements
+
+- Save Configuration Settings: Modify your program to store configuration settings in a file or a database.
+
+- Customizable Content for Recipients: Allow recipients to individually customize the content they want to receive in their digest.
+
+- Personalized Weather Forecast: Enhance the weather forecast by customizing it for each recipient's location.
+
+- Timezone-based Email Sending: Adjust the sending time of the email digest based on each recipient's timezone.
+
+- Notifying Admin of Unavailable Content Sources: Implement a mechanism to notify the admin when a content source becomes unavailable or encounters an issue.
+
+- GUI Improvements:  Enhance the visual appeal and usability of your GUI.
+
+- This could involve refining the layout, adding icons, using color schemes, or incorporating user-friendly features like tooltips or keyboard shortcuts.
+
+# Preserving Configuration Settings
+
+  ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/2dad8a9c-9c41-402b-9792-dc38ba03f0c3)
+
+  Figure 48: Saving configurations
 
 
 
+- To save the information between program runs, se JSON as the file format.
 
+- The JSON module was imported at the beginning.
 
+- Moving down, two new methods were added to the GUI class: a save config method at line 259 and a load config method at line 276.
+
+- In the save config method, gather the current state of all the GUI elements, put them into a configuration dictionary, and save it to a file using the JSON.dump function on line 271.
+
+- By the way, this method can accept a custom file path, but for this feature, keep the default argument.
+
+# Distributing Python Projects
+
+- Adding new features to your Python project can go on forever, as long as you are having fun and still learning.
+
+- However, there may come a time when you want to share your cool new application with others. 
+
+- For example, let's say your mom wants to send out her own daily email digest to friends and family. 
+
+- After tweaking the app to suit her needs, package it in a way that she can use. 
 
 
 
