@@ -1005,7 +1005,6 @@ Python 103: Intermediate Python
 
 - It's not limited to data science and software engineering; you can also work with mobile app development, artificial intelligence, and machine learning
 
-
 # Exploring Job Roles
 
 ![image](https://github.com/ZaahidAbdurahman/Python/assets/169241347/93d8548e-f0b1-4e0d-b7ca-1a3b0c74da08)
