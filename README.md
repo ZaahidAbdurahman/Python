@@ -961,8 +961,6 @@ Python 103: Intermediate Python
 
   Figure 48: Saving configurations
 
-
-
 - To save the information between program runs, se JSON as the file format.
 
 - The JSON module was imported at the beginning.
